@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="60">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="PAPER ONLY · OPEN · Wed 26 Aug 2026 11:51:35 IST · Fenrir, Tyr, Atreus, Mimir, Baldur, Freya">
+  <meta property="og:title" content="FENRIR PAPER PIT">
+  <meta property="og:description" content="PAPER ONLY · OPEN · Wed 26 Aug 2026 11:51:35 IST · Fenrir, Tyr, Atreus, Mimir, Baldur, Freya">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="scoreboard.png">
+  <title>FENRIR PAPER PIT · OPEN</title>
+  <style>
+    :root {
+      --bg: #07080b;
+      --panel: #10131a;
+      --ink: #e8edf5;
+      --muted: #8b93a7;
+      --line: #1e2430;
+      --gold: #e8b86d;
+      --green: #3dd68c;
+      --red: #ff5d5d;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0; background: var(--bg); color: var(--ink);
+      font-family: "IBM Plex Mono", "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+      font-size: 13px;
+    }
+    body { min-height: 100vh; padding: 22px 24px 32px; }
+    header {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      gap: 16px; margin-bottom: 18px;
+    }
+    .brand { font-size: 22px; letter-spacing: 0.18em; color: var(--gold); font-weight: 700; }
+    .brand span {
+      letter-spacing: 0.28em; color: var(--muted); font-weight: 400;
+      font-size: 12px; display: block; margin-top: 4px;
+    }
+    .clock-block { text-align: right; }
+    .clock { font-size: 18px; color: var(--ink); }
+    .sub { color: var(--muted); margin-top: 4px; font-size: 12px; }
+    .badge {
+      display: inline-block; padding: 2px 10px; border-radius: 999px;
+      font-weight: 700; letter-spacing: 0.12em; font-size: 12px;
+    }
+    .badge.CLOSED { background: #3a1010; color: var(--red); border: 1px solid #6b1d1d; }
+    .badge.OPEN { background: #0c2a1c; color: var(--green); border: 1px solid #1d6b45; }
+    .stamp {
+      display: inline-block; margin-top: 8px; padding: 3px 10px;
+      border: 2px solid var(--gold); color: var(--gold);
+      letter-spacing: 0.22em; font-size: 12px; font-weight: 700;
+      transform: rotate(-2deg);
+    }
+    .strip { color: var(--muted); margin: 0 0 14px; }
+    .strip b { color: var(--ink); font-weight: 600; }
+    table {
+      width: 100%; border-collapse: collapse; background: var(--panel);
+      border: 1px solid var(--line);
+    }
+    th, td {
+      padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--line);
+      white-space: nowrap;
+    }
+    th { color: var(--muted); font-size: 11px; letter-spacing: 0.12em; font-weight: 600; }
+    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tr:last-child td { border-bottom: none; }
+    .pos { color: var(--green); }
+    .neg { color: var(--red); }
+    .muted { color: var(--muted); }
+    .last {
+      margin: 16px 0 0; color: var(--muted); font-size: 12px;
+      border-top: 1px solid var(--line); padding-top: 12px;
+    }
+    footer {
+      margin-top: 18px; color: var(--muted); font-size: 11px;
+      letter-spacing: 0.04em;
+    }
+    @media (max-width: 720px) {
+      header { flex-direction: column; }
+      .clock-block { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <div class="brand">FENRIR <span>PAPER PIT · SIX BOOKS · ONE TAPE</span></div>
+    </div>
+    <div class="clock-block">
+      <div class="clock">Wed 26 Aug 2026 11:51:35 IST</div>
+      <div class="sub"><span class="badge OPEN">OPEN</span></div>
+      <div class="stamp">PAPER ONLY</div>
+    </div>
+  </header>
+  <div class="strip"><span>session <b>2026-08-26</b></span> · <span>fills <b>89</b></span> · <span>cash session <b>09:15–15:30 IST</b></span> · <span>published <b>Wed 26 Aug 2026 11:51:35 IST</b></span></div>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>TRADER</th>
+        <th class="num">DAY P&amp;L</th>
+        <th class="num">DAY %</th>
+        <th class="num">EQUITY</th>
+        <th>STRATEGY</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="muted">1</td><td>Fenrir</td><td class="num pos">₹3,144.44</td><td class="num pos">+0.31%</td><td class="num">₹10,03,144.44</td><td>fenrir_book <span class="muted">· cash swing book</span></td></tr><tr><td class="muted">2</td><td>Tyr</td><td class="num pos">₹456.61</td><td class="num pos">+0.05%</td><td class="num">₹10,00,456.61</td><td>defined_risk <span class="muted">· defined-risk planner</span></td></tr><tr><td class="muted">3</td><td>Atreus</td><td class="num neg">-₹5,380.91</td><td class="num neg">-0.54%</td><td class="num">₹9,94,619.09</td><td>opening_range_breakout <span class="muted">· ORB 15-min</span></td></tr><tr><td class="muted">4</td><td>Mimir</td><td class="num neg">-₹8,878.20</td><td class="num neg">-0.89%</td><td class="num">₹9,91,121.80</td><td>catalyst_flow <span class="muted">· RS / flow</span></td></tr><tr><td class="muted">5</td><td>Baldur</td><td class="num neg">-₹9,326.02</td><td class="num neg">-0.93%</td><td class="num">₹9,90,673.98</td><td>momentum <span class="muted">· session-high continuation</span></td></tr><tr><td class="muted">6</td><td>Freya</td><td class="num neg">-₹75,046.29</td><td class="num neg">-7.50%</td><td class="num">₹9,24,953.71</td><td>vwap_reversion <span class="muted">· VWAP fade</span></td></tr>
+    </tbody>
+  </table>
+  <p class="last">LAST FILL · Mimir · 11:07:58 BUY 4262 IDBI.NS @ ₹91.81 · mimir flow long IDBI.NS rs=4.03% vs Nifty -0.07% near high 91.99</p>
+  <footer>
+    PAPER ONLY · six isolated ₹10,00,000 books · never a live order ·
+    read-only snapshot · auto-refresh 60s when this file is rewritten
+  </footer>
+</body>
+</html>
